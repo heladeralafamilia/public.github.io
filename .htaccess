@@ -1,5 +1,5 @@
 Options All -Indexes
 
-DirectoryIndex índice.html
+DirectoryIndex index.html
 
 ErrorDocument 404 /heladeria/404.html
