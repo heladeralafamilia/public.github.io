@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .a {
+        font-size: 100px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-kerning: auto;
+        text-indent: 0;
+        text-decoration-skip: black;
+        text-anchor: middle;
+        text-emphasis-color: blue;
+        position: relative;
+        color: rgb(177, 177, 177);
+        background-size: 0px;
+    }
+    
+    .b {
+        font-size: 30px;
+        mask-type: luminance;
+        margin: 20px;
+    }
+    
+    .c {
+        font-size: 20px;
+        margin: 20px;
+    }
+    
+    .link {
+        background: rgb(87, 228, 122);
+        padding: 10px;
+        list-style: none;
+        border-radius: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 47, 255);
+    }
+    
+    .link:hover {
+        background: rgb(66, 255, 113);
+        padding: 11px;
+        text-decoration: underline;
+        animation: algo 500ms;
+    }
+    
+    @keyframes algo {
+        0% {
+            background: rgb(66, 255, 113);
+            padding: 10px;
+            color: rgb(0, 47, 255);
+        }
+        50% {
+            background: rgb(66, 255, 113);
+            padding: 0px;
+            color: rgb(0, 0, 0);
+        }
+        100% {
+            background: rgb(18, 42, 255);
+            padding: 10px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    
+    .link:hover {
+        background: rgb(18, 42, 255);
+        color: rgb(255, 255, 255);
+    }
+</style>
+
+<body>
+    <div class="a" align="center">404</div>
+    <div class="b" align="center">Error al intentar acceder a la pagina</div>
+    <div class="c " align="center">Quizas sea porque se intento acceder a una direccion no existente dentro de Heladeria La Familia Web</div>
+    <div class="" align="center"><a class="link" href="./index.html">Inicio</a></div>
+</body>
+
+</html>

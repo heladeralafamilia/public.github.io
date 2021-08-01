@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./js/jquery-3.5.0.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/pushbar.js"></script>
+
+
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/regular.min.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="./css/pushbar.css">
+
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heladeria La Familia Su. San Juan Nepomuseno</title>
+    <meta name="application-name" content="Heladeria-la-familia">
+    <meta name="author" content="Tobyas Ariel Sosa Ojeda">
+    <meta name="copyright" content="© Heladeria la Familia">
+    <meta name="keywords" content="productos de Heladeria la familia san juan nepomuseno paraguay">
+    <meta name="description" content="Productos de heladeria la familia su. San Juan Nepomuseno">
+</head>
+<style>
+    body {
+        background-color: rgb(80, 80, 80);
+    }
+    
+    .ctn-enlases {
+        position: relative;
+        top: 30px;
+        transition: 400ms cubic-bezier(2, 1, 1, 2);
+    }
+    
+    .e-link {
+        position: relative;
+        background-color: rgb(0, 60, 255);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: cornsilk;
+        text-decoration: none;
+    }
+    
+    .e-link:hover {
+        position: relative;
+        background-color: rgb(0, 60, 255);
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 16px;
+        padding-right: 16px;
+        color: cornsilk;
+    }
+    
+    .activo {
+        position: relative;
+        background-color: rgb(49, 49, 255);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 17px;
+        color: rgb(255, 255, 255);
+        border-bottom: 5px solid black;
+    }
+    
+    .activo:hover {
+        color: rgb(245, 223, 223);
+    }
+    
+    .ctn-ensales1 {
+        position: relative;
+        margin-top: 100px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    
+    .img-des {
+        position: relative;
+        width: 100%;
+    }
+    
+    .df {
+        z-index: 20000;
+    }
+    
+    .card {
+        position: relative;
+        display: inline-flex;
+        margin: 10px;
+        width: 300px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    @media (max-width:450px) {
+        .card {
+            margin: 10px;
+            width: 260px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+    
+    @media (max-width:400px) {
+        .card {
+            width: 100%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+    }
+    
+    .h-1 {
+        position: fixed;
+        z-index: 12212121;
+        display: block;
+        width: 100%;
+        --he: 100px;
+        height: var(--he);
+        top: 0%;
+        left: 0%;
+        background-color: rgba(184, 194, 252, 0.926);
+        background-repeat: none;
+        background-blend-mode: soft-light;
+    }
+    
+    .h-1:hover {
+        background-color: rgba(184, 194, 252, 0.926);
+    }
+    
+    .txt-1 {
+        position: relative;
+        height: 100px;
+        display: flex;
+    }
+    
+    .txt-1 img {
+        position: inherit;
+    }
+    
+    .ctn-btn {
+        display: none;
+    }
+    
+    @media (max-width:1205px) {
+        .txt-1 {
+            position: relative;
+            height: 100px;
+            display: flex;
+        }
+        .ctn-btn {
+            display: none;
+        }
+    }
+    
+    @media (max-width:1070px) {
+        .txt-1 {
+            position: relative;
+            height: 100px;
+            display: flex;
+        }
+        .ctn-btn {
+            display: none;
+        }
+    }
+    
+    @media (max-width:1000px) {
+        .ctn-enlases {
+            display: none;
+        }
+        .e-link {
+            position: relative;
+            display: block;
+            width: 100px;
+            margin-top: 20px;
+        }
+        .ctn-btn {
+            position: absolute;
+            right: 1%;
+            top: 2%;
+            display: block;
+        }
+        .ctn-btn button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+    
+    @media (max-width:600px) {
+        .ctn-enlases {
+            display: none;
+        }
+        .e-link {
+            position: relative;
+            display: block;
+            width: 100px;
+            margin-top: 20px;
+        }
+        .ctn-btn {
+            position: absolute;
+            right: 1%;
+            top: 2%;
+            display: block;
+        }
+        .ctn-btn button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+    
+    @media (max-width:400px) {
+        .ctn-enlases {
+            display: none;
+        }
+        .e-link {
+            position: relative;
+            display: block;
+            width: 100px;
+            margin-top: 20px;
+        }
+        .ctn-btn {
+            position: absolute;
+            right: 1%;
+            top: 2%;
+            display: block;
+        }
+        .ctn-btn button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+    
+    .ctn-p-a {
+        align-content: center;
+        position: relative;
+        top: 110px;
+        display: block;
+    }
+    
+    .ctn-contenidos {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 80%;
+    }
+</style>
+
+<body>
+    <header class="h-1">
+        <div class="txt-1">
+            <img src="./img/logo.png" alt="">
+            <p class="display-6 d-none d-md-block"><strong>Sucursal</strong> San Juan Nepomuseno</p>
+
+            <div class="ctn-btn">
+                <button data-pushbar-target="mypushbar1" class="close" id="des-menu">
+                        <i class="fas fa-3x fa-bars"></i>
+                    </button>
+            </div>
+
+            <div id="menu-des" class="ctn-enlases">
+                <a href="./" class="e-link ">Inicio</a>
+                <a href="#" class="e-link activo">Productos</a>
+                <a href="sabores.html" class="e-link ">sabores</a>
+                <a href="contacto.html" class="e-link ">Contacto</a>
+
+            </div>
+            <div data-pushbar-id="mypushbar1" data-pushbar-direction="left">
+                <img class="img-des" src="./img/logo.png" alt="">
+                <div class="ctn-ensales1">
+                    <div align="end" class="df"><button class="btn btn-close" data-pushbar-close="mypushbar1"></button></div>
+
+                    <h3><b>Sucursal en </b>San Juan Nepomuseno</h3>
+                    <h5>Enlases:</h5>
+                    <a href="./" class="e-link ">Inicio</a>
+                    <a href="#" class="e-link activo">Productos</a>
+                    <a href="sabores.html" class="e-link ">sabores</a>
+                    <a href="contacto.html" class="e-link ">Contacto</a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>
+                    &copy; Heladeria La Familia
+                </h2>
+            </div>
+
+        </div>
+    </header>
+    <style>
+
+    </style>
+    <header class="ctn-p-a">
+        <div align="center">
+            <div class="ctn-contenidos">
+                <h2>Nosotros nos enfocamos mas en el suministro a las demas vendedores y repartidores de helados</h2>
+                <h2><strong>Ofresemos:</strong></h2>
+                <div class="cards">
+                    <!--Otro-->
+                    <div class="card " style="width: auto;">
+                        <img src="./img/car (2).jpg" class=" card-img-top" alt="">
+                        <div class="card-title h4">Conos de Helado</div>
+                        <div class="card-body">Cajas de conos de helado a 20.000 gs por paquete</div>
+                        <div align="start" class="card-footer">&COPY;Heladeria la familia</div>
+                    </div>
+                    <!--Otro-->
+                    <div class="card ">
+                        <img src="./img/car (2).jpg" class=" card-img-top" alt="">
+                        <div class="card-title h4">Conos de Helado</div>
+                        <div class="card-body">Cajas de conos de helado a 20.000 gs por paquete</div>
+                        <div align="start" class="card-footer">&COPY;Heladeria la familia</div>
+                    </div>
+                    <!--Otro-->
+                    <div class="card ">
+                        <img src="./img/car (2).jpg" class=" card-img-top" alt="">
+                        <div class="card-title h4">Conos de Helado</div>
+                        <div class="card-body">Cajas de conos de helado a 20.000 gs por paquete</div>
+                        <div align="start" class="card-footer">&COPY;Heladeria la familia</div>
+                    </div>
+                    <!--Otro-->
+                    <div class="card ">
+                        <img src="./img/car (2).jpg" class=" card-img-top" alt="">
+                        <div class="card-title h4">Conos de Helado</div>
+                        <div class="card-body">Cajas de conos de helado a 20.000 gs por paquete</div>
+                        <div align="start" class="card-footer">&COPY;Heladeria la familia</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </header>
+
+    <style>
+
+    </style>
+
+</body>
+
+</html>
+<script>
+    $("#des-menu").click(function() {
+        $("#menu-des").removeClass("rep");
+    })
+</script>
+<style>
+
+</style>
+
+
+<script type="text/javascript">
+    const pushbar = new Pushbar({
+        blur: true,
+        overlay: true,
+    });
+</script> pushbar = new Pushbar({ blur: true, overlay: true, });
+</script>

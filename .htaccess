@@ -1,0 +1,7 @@
+Options All -Indexes
+
+DirectoryIndex index.html 
+
+
+ErrorDocument 404 /heladeria/404.html
+RewriteRule ^(([^/]+/)*[^.]+)$ /$1.php [L]
